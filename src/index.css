@@ -1,0 +1,69 @@
+div {
+    border: 1px solid black;
+}
+
+body {
+    margin: 0;
+}
+
+button {
+    appearance: auto;
+    border: 1px solid black;
+}
+
+#content {
+    display: grid;
+    height: 99vh;
+    grid-template-rows: 1fr 6fr;
+}
+
+.divProjects {
+    display: flex;
+    padding: 8px;
+    overflow-x: hidden;
+    gap: 8px;
+    align-items: center;
+}
+
+.projectWindow {
+    gap: 8px;
+    padding: 8px;
+    width: 90vw;
+    height: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+.projectWindow::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+    background-color: #aaa;
+}
+
+.projectWindow::-webkit-scrollbar-thumb {
+    background-color: black;
+}
+
+.projectWindow > button {
+    display: inline-block;
+    height: 100%;
+    width: auto;
+}
+
+.newProjectButton {
+    height: 100%;
+}
+
+form > div {
+    margin-top: 16px;
+    border: 0;
+}
+
+form > div > button{
+    margin-right: 8px;
+}
+
