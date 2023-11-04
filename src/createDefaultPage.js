@@ -6,8 +6,8 @@ export const createDefaultPage = () => {
     const divSN = document.createElement('div');
 
     function createMainPage() {
-        divProjects.classList.add('divProjects');
-        divSN.classList.add('divSN');
+        divProjects.id = 'divProjects';
+        divSN.id = 'divSN';
     
         const contentDiv = document.getElementById('content');
     

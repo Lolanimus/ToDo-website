@@ -10,5 +10,7 @@ export const createProjectWindow = (divProjects) => {
     createLeftScroll(projectWindow);
     createRightScroll(projectWindow);
     createProject('Project1', projectWindow);
+    createProject('Project2', projectWindow);
+    createProject('Project3', projectWindow);
     createNewProjectButton(projectWindow);
 }

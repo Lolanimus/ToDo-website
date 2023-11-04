@@ -11,13 +11,18 @@ button {
     border: 1px solid black;
 }
 
+p {
+    display: inline-block;
+    margin: 4px;
+}
+
 #content {
     display: grid;
     height: 99vh;
     grid-template-rows: 1fr 6fr;
 }
 
-.divProjects {
+#divProjects {
     display: flex;
     padding: 8px;
     overflow-x: hidden;
@@ -63,7 +68,10 @@ form > div {
     border: 0;
 }
 
-form > div > button{
+form > div > button {
     margin-right: 8px;
 }
 
+.projectWindow > button > button {
+    margin: 2px 2px 2px 4px;
+}
