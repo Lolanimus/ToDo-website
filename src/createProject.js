@@ -4,6 +4,7 @@ import {projectDeleteButton} from './projectDeleteButton';
 export const createProject = (name, projectWindow) => {
     let lastProjectNumber;
     let projectNumber;
+    const divSN = document.getElementById('divSN');
     const projectButton = document.createElement('button');
     const projectButtonName = document.createElement('p');
     projectButtonName.innerHTML = name;
@@ -36,7 +37,8 @@ export const createProject = (name, projectWindow) => {
                     if(e.childNodes.length < 2) {
                         projectDeleteButton(e, true);
                     }
-                    createSNWindow();
+                    divSN.innerHTML = '';
+                    createSNWindow(e.id);
                     break;
             
                 default:
